@@ -19,13 +19,13 @@ ERNG = rnd.Next(1, 4);
 if (ERNG == 1)
 {
 EHP = 80;
-EDEF = 5;
+EDEF = 4;
 Console.WriteLine("You have encountered Enemy 1!");
 }
 else if (ERNG == 2)
 {
 EHP = 66;
-EDEF = 11;
+EDEF = 6;
 Console.WriteLine("You have encountered Enemy 2!");
 }
 else
@@ -51,6 +51,7 @@ while (EHP > 0)
         if (WPTYP == "Physical")
         {
             DAM = rnd.Next(22, 28);
+            DAM -= EDEF;
             EHP -= DAM;
             Console.WriteLine($"You attacked physically, dealing {DAM} damage!");
         }
