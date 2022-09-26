@@ -66,6 +66,7 @@ while (EHP > 0)
     else if (Move == "Guard")
     {
         Guarding = true;
+        Console.WriteLine("You guarded yourself! You'll take 15 less damage this turn!");
     }
     else
     {
@@ -73,8 +74,11 @@ while (EHP > 0)
         if (HP > 150)
             HP = 150;
         ITEM -= 1;
+        Console.WriteLine("You consumed an item! You recovered 75 HP!");
+        Thread.Sleep(1400);
+        Console.WriteLine($"You now have {HP} HP, and {ITEM} items!");
     }
-    Thread.Sleep(2000);
+    Thread.Sleep(1700);
     ERNG2 = rnd.Next(1, 3);
     if (ERNG2 == 1)
     {
