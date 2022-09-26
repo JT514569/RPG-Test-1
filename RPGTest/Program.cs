@@ -35,17 +35,17 @@ EDEF = 3;
 Console.WriteLine("You have encountered Enemy 3!");
 }
 Thread.Sleep(2000);
-
+CanRun = true;
 while (EHP > 0)
 {
     Move = "Waiting";
     Guarding = false;
     do
     {
-        Console.WriteLine("What shall you do? Attack, Guard, or Item? Please type it correctly.");
+        Console.WriteLine("What shall you do? Attack, Guard, Item, or Run? Please type it correctly.");
         Move = Console.ReadLine();
     }
-    while (Move != "Attack" && Move != "Guard" && Move != "Item");
+    while (Move != "Attack" && Move != "Guard" && Move != "Item" && Move != "Run");
     if (Move == "Attack")
     {
         if (WPTYP == "Physical")
@@ -67,6 +67,15 @@ while (EHP > 0)
     {
         Guarding = true;
         Console.WriteLine("You guarded yourself! You'll take 15 less damage this turn!");
+    }
+    else if (Move == "Run")
+    {
+        if (CanRun == true)
+        {
+            Console.WriteLine("You ran away!");
+            break;
+        }
+
     }
     else
     {
