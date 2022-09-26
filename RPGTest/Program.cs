@@ -11,6 +11,7 @@ string WPTYP = "Physical";
 string Move;
 Random rnd = new Random();
 int ITEM = 5;
+// Variables are announced privately in a meeting.
 
 
 // Battle
@@ -36,18 +37,22 @@ Console.WriteLine("You have encountered Enemy 3!");
 }
 Thread.Sleep(2000);
 CanRun = true;
+// Random enemy battles can be ran from.
 while (EHP > 0)
 {
     Move = "Waiting";
     Guarding = false;
+    // Guarding becomes false after a turn, even when the player didn't guard.
     do
     {
         Console.WriteLine("What shall you do? Attack, Guard, Item, or Run? Please type it correctly.");
         Move = Console.ReadLine();
     }
     while (Move != "Attack" && Move != "Guard" && Move != "Item" && Move != "Run");
+    // If the player doesn't type a command correctly, it loops to their turn again.
     if (Move == "Attack")
     {
+        // Different types of weapons allow for different amounts of damage.
         if (WPTYP == "Physical")
         {
             DAM = rnd.Next(22, 28);
@@ -75,6 +80,7 @@ while (EHP > 0)
         {
             Console.WriteLine("You ran away!");
             break;
+            // Why would you do that
         }
 
     }
@@ -90,6 +96,7 @@ while (EHP > 0)
     }
     Thread.Sleep(1700);
     ERNG2 = rnd.Next(1, 3);
+    // Enemy has two random attacks. An attack and a heal.  ... not really much.
     if (ERNG2 == 1)
     {
         if (ERNG == 1)
@@ -119,6 +126,7 @@ while (EHP > 0)
         Console.WriteLine($"The enemy healed themselves for 20 HP! They now have {EHP} HP!");
     }
     Thread.Sleep(2000);
+    // Wait 2 seconds.
 }
 
 
