@@ -90,6 +90,10 @@ while (EHP > 0)
         {
             DAM = rnd.Next(30, 36);
         }
+        if (Guarding == true)
+        {
+            DAM -= 15;
+        }
         HP -= DAM;
         Console.WriteLine($"The enemy attacked, dealing {DAM} damage to you!");
         Thread.Sleep(1400);
