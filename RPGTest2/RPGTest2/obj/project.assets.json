@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\514569\\OneDrive - eastsussexcollegegroup\\Games Development\\Programming Practice\\RPGTest2\\RPGTest2\\RPGTest2.csproj",
+      "projectUniqueName": "C:\\Users\\514569\\OneDrive - eastsussexcollegegroup\\Games Development\\RPGTest\\RPGTest2\\RPGTest2\\RPGTest2.csproj",
       "projectName": "RPGTest2",
-      "projectPath": "C:\\Users\\514569\\OneDrive - eastsussexcollegegroup\\Games Development\\Programming Practice\\RPGTest2\\RPGTest2\\RPGTest2.csproj",
+      "projectPath": "C:\\Users\\514569\\OneDrive - eastsussexcollegegroup\\Games Development\\RPGTest\\RPGTest2\\RPGTest2\\RPGTest2.csproj",
       "packagesPath": "C:\\Users\\514569\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\514569\\OneDrive - eastsussexcollegegroup\\Games Development\\Programming Practice\\RPGTest2\\RPGTest2\\obj\\",
+      "outputPath": "C:\\Users\\514569\\OneDrive - eastsussexcollegegroup\\Games Development\\RPGTest\\RPGTest2\\RPGTest2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

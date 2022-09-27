@@ -13,15 +13,60 @@ public class Program
 
     public static void Main(string[] args)
     {
+        Console.WriteLine("Hey! You're finally awake. Thank goodness you're safe.");
+        Thread.Sleep(1900);
+        Console.WriteLine("What's your name?");
+        string myName = Console.ReadLine();
+        Console.WriteLine(myName + "...you must be so confused.");
+        Thread.Sleep(1800);
+        Console.WriteLine(@"You're currently in a safehouse, where fellow civilians are gathering to keep themselves safe from the outside world.                                    /\
+                              /\  //\\
+                       /\    //\\///\\\        /\
+                      //\\  ///\////\\\\  /\  //\\
+         /\          /  ^ \/^ ^/^  ^  ^ \/^ \/  ^ \
+        / ^\    /\  / ^   /  ^/ ^ ^ ^   ^\ ^/  ^^  \
+       /^   \  / ^\/ ^ ^   ^ / ^  ^    ^  \/ ^   ^  \       *
+      /  ^ ^ \/^  ^\ ^ ^ ^   ^  ^   ^   ____  ^   ^  \     /|\
+     / ^ ^  ^ \ ^  _\___________________|  |_____^ ^  \   /||o\
+    / ^^  ^ ^ ^\  /______________________________\ ^ ^ \ /|o|||\
+   /  ^  ^^ ^ ^  /________________________________\  ^  /|||||o|\
+  /^ ^  ^ ^^  ^    ||___|___||||||||||||___|__|||      /||o||||||\       |
+ / ^   ^   ^    ^  ||___|___||||||||||||___|__|||          | |           |
+/ ^ ^ ^  ^  ^  ^   ||||||||||||||||||||||||||||||oooooooooo| |ooooooo  |
+ooooooooooooooooooooooooooooooooooooooooooooooooooooooooo");
+        Thread.Sleep(3000);
+        Console.WriteLine("Why's that? Well...it's a bit hard to believe, but...");
+        Thread.Sleep(1800);
+        Console.WriteLine("...the whole world's kind of ruined.");
+        Thread.Sleep(1800);
+        Console.WriteLine("I know...it sounds really bad, and it is. The world's being overrun by titanic beasts, and they've destroyed many civilisations, and have basically taken over the world.");
+        Thread.Sleep(3700);
+        Console.WriteLine("So yeah, that's why you and me and so many others are here in this safehouse.");
+        Thread.Sleep(2400);
+        Console.WriteLine("Please do try and make yourself comfy here, as you'll be here for a very long time.");
+        Thread.Sleep(1800);
+        Console.WriteLine("...what? You want to try and help us?");
+        Thread.Sleep(2000);
+        Console.WriteLine("Well, I do have an idea for that, but it's risky...");
+        Thread.Sleep(2400);
+        Console.WriteLine("Do you think you could get some fruit from the outside world to take back home?");
+        string Choice = Console.ReadLine();
+        while (Choice != "Yes" && Choice != "No")
+        {
+            if (Choice == "Yes")
+            {
+                break;
+            }
+        }
 
+        if (Choice == "No")
+        {
+            Console.WriteLine("Then stay here for the rest of your life!");
+            Thread.Sleep(2400);
+            Console.WriteLine("You got the safe ending!");
 
-
-        // Variables are announced privately in a meeting.
-
+        }
         battle();
-
-
-
 
     }
 
@@ -41,7 +86,7 @@ public class Program
         string Move;
         Random rnd = new Random();
         int ITEM = 5;
-
+        // Variables are announced privately in a meeting.
         // Battle
         // Enemy RNG. 1 to 3.
         ERNG = rnd.Next(1, 4);
